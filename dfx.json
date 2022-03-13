@@ -2,17 +2,17 @@
   "version": 1,
   "dfx": "0.9.2",
   "canisters": {
-    "my_counter": {
+    "microblog": {
       "type": "motoko",
-      "main": "src/my_counter/increment_counter.mo"
+      "main": "src/microblog/main.mo"
     },
-    "my_counter_assets": {
+    "microblog_assets": {
       "type": "assets",
       "source": [
-        "src/my_counter_assets/assets"
+        "src/microblog_assets/assets"
       ],
       "dependencies": [
-        "my_counter"
+        "microblog"
       ]
     }
   },
@@ -27,3 +27,5 @@
       "bind": "127.0.0.1:8000",
       "type": "ephemeral"
     }
+  }
+}
